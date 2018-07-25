@@ -6,6 +6,46 @@ $("html").ready(function() {
 });
 
 
+$("#twitterAppImg")
+	.on("mouseenter", function(){
+		$(this).css("cursor", "pointer");
+			$(this).css("opacity", "0.8");
+		})
+		.on("mouseleave", function(){
+			$(this).css("opacity", "1");
+		})
+		.on("click", function(){
+			var win = window.open('https://warm-crag-73589.herokuapp.com/', '_blank');
+			if (win) {
+			    //Browser has allowed it to be opened
+			    win.focus();
+			} else {
+			    //Browser has blocked it
+			    alert('Please allow popups for this website');
+			}
+			//$(this).find("parfectMatch/index.html").attr("target", "_blank"); 
+		});
+
+$("#flickrAppImg")
+	.on("mouseenter", function(){
+		$(this).css("cursor", "pointer");
+			$(this).css("opacity", "0.8");
+		})
+		.on("mouseleave", function(){
+			$(this).css("opacity", "1");
+		})
+		.on("click", function(){
+			var win = window.open('https://agile-inlet-23006.herokuapp.com/', '_blank');
+			if (win) {
+			    //Browser has allowed it to be opened
+			    win.focus();
+			} else {
+			    //Browser has blocked it
+			    alert('Please allow popups for this website');
+			}
+			//$(this).find("parfectMatch/index.html").attr("target", "_blank"); 
+		});
+
 $("#picGalleryImg")
 	.on("mouseenter", function(){
 			$(this).css("cursor", "pointer");
