@@ -1,0 +1,295 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+/*header:after{
+  clear: both;
+  display: block;
+  content: " ";
+  visibility: hidden;
+}*/
+
+header {
+	min-height: 50px;
+	background: #336699;
+	
+	padding-top:10px;
+}
+
+header ul{
+	padding: none;
+	margin: none;
+}
+
+header li {
+	padding: 0 20px 0 20px;
+
+	display: inline;
+	float: left;
+	list-style-type: none;
+
+}
+
+header a:link {
+	color: white;
+}
+header a:visited {
+	color: white;
+}
+header a:hover {
+	text-decoration: underline;
+}
+header a {
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+
+
+
+header #name{
+	float: left;
+}
+
+header #name h1{
+	margin:0;
+	color: #ffffff;
+}
+
+header nav {
+	float: right;
+
+}
+
+header .current a{
+
+	color: #aec2ea;
+
+}
+
+#welcome{
+  min-height:400px;
+  background:url('http://www.cforsa.com/wp-content/uploads/2016/12/pexels-photo-48606-1920-blured.jpeg') no-repeat -450px -400px;
+
+  text-align:center;
+  color:white;
+  	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 20px rgba(0,0,0,0.1);
+ 	border-bottom: 70px solid #336699;;
+}
+
+#welcome h1{
+  margin-top: 100px;
+  font-size:55px;
+  margin-bottom:10px;
+  font-family: Arial;
+}
+
+#welcome p{
+  font-size:20px;
+  font-family: Arial;
+}
+
+
+.homeImg {
+	width: 31%;
+	float: left;
+	text-align: center;
+	padding: 10px;
+}
+
+.homeImg img{
+	width: 250px;
+	border-radius: 100%;
+
+}
+
+section.about {
+	margin: 20px;
+}
+.about .container, .job, .project {
+	background-color: #ffece6;
+	padding: 0 20px;
+
+	border-radius: 25px;
+}
+.job {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#gtechImg {
+	float: left;
+	width: 250px;
+	padding: 0 10px 10px 10px
+}
+
+#webDevImg, #lmlogo {
+	float: right;
+	width: 500px;
+	padding: 0 10px 10px 10px
+}
+
+#lmlogo {
+width: 150px;
+}
+
+img#webDevImg, img#lmlogo, img#gtechImg {
+	border-radius: 30px;
+}
+
+
+
+
+
+#sidebar {
+	
+	float: left;
+	width: 25%;
+	
+}
+
+#sidebar h1, #experience h1 {
+	font-size: 1.5em;
+}
+
+.sidebar-col-1 {
+float: left;
+width: 12%;
+}
+
+.sidebar-col-2 {
+	float: right;
+	width: 12%;
+}
+
+#experience {
+
+float: right;
+width: 55%;
+}
+
+
+.sidebar-col-1 img, .sidebar-col-2 img{
+	width: 150px;
+
+	margin-bottom: 20px;
+
+}
+
+.project {
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.projDescr {
+	float: left;
+	width: 40%;
+}
+
+.projectImg {
+
+float: right;
+width: 40%;
+}
+
+.thumbnail img{
+	width: 350px;
+	margin: 30px 0;
+} 
+
+
+footer {
+	text-align: center;
+	background-color: #f0f0f5;
+	padding:20px;
+  	margin-top:20px;
+}
+
+footer ul{
+	padding: 0;
+	margin: 0;
+}
+
+footer li {
+	display: inline;
+	list-style-type: none;
+	padding: 0 20px 0 20px;
+	
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer a:link {
+	color: gray;
+}
+footer a:visited {
+	color: gray;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+@media(max-width:1080px) {
+
+	.homeImg, 
+	#photos .homeImg {
+		float: none;
+		text-align: center;
+		width: 100%;
+		
+		padding: 5px 0 0 0 ;
+	}
+}
+@media(max-width:768px) {
+
+
+
+
+	.homeImg, 
+	#photos .homeImg, 
+	header #name, 
+	header ul, 
+	header li,
+	header nav,
+	footer ul,
+	footer li,
+	#gtechImg,
+	#webDevImg,
+	#lmlogo {
+		float: none;
+		text-align: center;
+		width: 100%;
+		
+		padding: 5px 0 0 0 ;
+	}
+
+
+
+	header nav li,
+	footer li {
+		display: block;
+		text-align: center;
+		width: 100%;
+
+	}
+
+	 header {
+	    padding-bottom:20px;
+	 }
+
+}
